@@ -1,0 +1,7 @@
+%h2 Details about #{@movie.title}'s director ->  #{@movie.director}
+%p Director also directed the following movies:
+%ul
+  - @movies_list.each do |movie|
+    %li= movie.title
+      
+    

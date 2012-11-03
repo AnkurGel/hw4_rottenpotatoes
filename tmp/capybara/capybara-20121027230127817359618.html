@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Rotten Potatoes!</title>
+<link href="/assets/application.css" media="screen" rel="stylesheet" type="text/css">
+<script src="/assets/application.js" type="text/javascript"></script>
+</head>
+<body>
+<h1 class="title">Rotten Potatoes!</h1>
+<div id="main">
+<h1>All Movies</h1>
+<form accept-charset="UTF-8" action="/movies" id="ratings_form" method="get">
+<div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+
+
+Include:
+G
+<input checked id="ratings_G" name="ratings[G]" type="checkbox" value="1">
+PG
+<input checked id="ratings_PG" name="ratings[PG]" type="checkbox" value="1">
+PG-13
+<input checked id="ratings_PG-13" name="ratings[PG-13]" type="checkbox" value="1">
+NC-17
+<input checked id="ratings_NC-17" name="ratings[NC-17]" type="checkbox" value="1">
+R
+<input checked id="ratings_R" name="ratings[R]" type="checkbox" value="1"><input id="ratings_submit" name="commit" type="submit" value="Refresh">
+</form>
+
+<table id="movies">
+<thead><tr>
+<th><a href="/movies?ratings%5BG%5D=1&amp;ratings%5BNC-17%5D=1&amp;ratings%5BPG%5D=1&amp;ratings%5BPG-13%5D=1&amp;ratings%5BR%5D=1&amp;sort=title" id="title_header">Movie Title</a></th>
+<th>Rating</th>
+<th><a href="/movies?ratings%5BG%5D=1&amp;ratings%5BNC-17%5D=1&amp;ratings%5BPG%5D=1&amp;ratings%5BPG-13%5D=1&amp;ratings%5BR%5D=1&amp;sort=release_date" id="release_date_header">Release Date</a></th>
+<th>More Info</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Aladdin</td>
+<td>G</td>
+<td>1992-11-25 00:00:00 UTC</td>
+<td><a href="/movies/1">More about Aladdin</a></td>
+</tr>
+<tr>
+<td>The Terminator</td>
+<td>R</td>
+<td>1984-10-26 00:00:00 UTC</td>
+<td><a href="/movies/2">More about The Terminator</a></td>
+</tr>
+<tr>
+<td>When Harry Met Sally</td>
+<td>R</td>
+<td>1989-07-21 00:00:00 UTC</td>
+<td><a href="/movies/3">More about When Harry Met Sally</a></td>
+</tr>
+<tr>
+<td>The Help</td>
+<td>PG-13</td>
+<td>2011-08-10 00:00:00 UTC</td>
+<td><a href="/movies/4">More about The Help</a></td>
+</tr>
+<tr>
+<td>Chocolat</td>
+<td>PG-13</td>
+<td>2001-01-05 00:00:00 UTC</td>
+<td><a href="/movies/5">More about Chocolat</a></td>
+</tr>
+<tr>
+<td>Amelie</td>
+<td>R</td>
+<td>2001-04-25 00:00:00 UTC</td>
+<td><a href="/movies/6">More about Amelie</a></td>
+</tr>
+<tr>
+<td>2001: A Space Odyssey</td>
+<td>G</td>
+<td>1968-04-06 00:00:00 UTC</td>
+<td><a href="/movies/7">More about 2001: A Space Odyssey</a></td>
+</tr>
+<tr>
+<td>The Incredibles</td>
+<td>PG</td>
+<td>2004-11-05 00:00:00 UTC</td>
+<td><a href="/movies/8">More about The Incredibles</a></td>
+</tr>
+<tr>
+<td>Raiders of the Lost Ark</td>
+<td>PG</td>
+<td>1981-06-12 00:00:00 UTC</td>
+<td><a href="/movies/9">More about Raiders of the Lost Ark</a></td>
+</tr>
+<tr>
+<td>Chicken Run</td>
+<td>G</td>
+<td>2000-06-21 00:00:00 UTC</td>
+<td><a href="/movies/10">More about Chicken Run</a></td>
+</tr>
+</tbody>
+</table>
+<a href="/movies/new">Add new movie</a>
+
+</div>
+</body>
+</html>
