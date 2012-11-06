@@ -1,4 +1,6 @@
-3rd assignment for SaaS Berkeley
+4th assignment for SaaS Berkeley
 ===============================
 
-* Wrote cucumber tests. _easy-shit_
+* assignment 4 SaaS Berkeley. _Done._
+* Added search by director route, model & controller method.
+* Full unit test and cucumber scenarios(integration tests)(integration tests
